@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ใบแจ้งซ่อม</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imge/download-Photoroom.png" type="imge">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">🔧</div>
+            <h1>ใบแจ้งซ่อม</h1>
+            <p>กรุณากรอกข้อมูลให้ครบถ้วน</p> 
+        </div>
+        
+        <div class="form-content">
+            <form id="form">
+                <div class="form-group">
+                    <label for="name">ชื่อผู้แจ้ง <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="กรอกชื่อ-นามสกุล" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์ <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="0XX-XXX-XXXX" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="room">สถานที่/ห้อง <span class="required">*</span></label>
+                    <input type="text" id="room" name="room" placeholder="เช่น 208, 203" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="equipment">อุปกรณ์ที่เสีย <span class="required">*</span></label>
+                    <input type="text" id="equipment" name="equipment" placeholder="ระบุอุปกรณ์ที่เสีย เช่น คอมพิวเตอร์, โปรเจคเตอร์, ram" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">วันที่แจ้งซ่อม <span class="required">*</span></label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">รายละเอียดปัญหา</label>
+                    <textarea id="details" name="details" placeholder="อธิบายอาการเสียหรือปัญหาที่พบ..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">ส่งใบแจ้งซ่อม</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
